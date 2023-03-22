@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200703/pngtree-mathematics-education-calculator-ruler-hand-drawn-background-image_340649.jpg);
+        background-size: 125%;
+    }
+    #box {
+        border: 2px solid #f3b5b5;
+        padding: 50px;
+        width: 750px;
+        background-color: #f3b5b5;
+        color: #3e3e44;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 30px;
+        font-family: "Times New Roman";
+        color: #ea0707;
+        text-shadow: 1px 1px #524e4e;
+    }
+    #C2F, #F2C {
+        display: inline-block;
+    }
+    #C2F  {
+        margin-right: 10px;
+    }
+    #F2C {
+        margin-left: 10px;
+    }
+
+
+</style>
+<body>
+<h1 style="color: #ff89a0;">Temperatur converter</h1>
+
+<form action="/index" method="post">
+        <label > Enter temperature: </label>
+        <input type="text" name="temperature" placeholder="Enter temperatur" >
+
+        <p>Converted to: <span th:text="${res}"/> </p>
+
+        <div id = "C2F">
+            <input name="type" type="submit" value="C2F" style="color:#ff9f9f;">
+        </div>
+
+        <div id = "F2C">
+            <input type="submit" name="type" value="F2C" style="color:#fda6a6;">
+        </div>
+
+    </form>
+
+</div>
+
+
+</body>
+
+</html>
